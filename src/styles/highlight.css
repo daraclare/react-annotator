@@ -1,0 +1,39 @@
+/* Housekeeping */
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    font:1em/1.5 Georgia, serif;
+    padding:2%;
+}
+h1{
+    font-size:1.5rem;
+}
+
+/* Heading style */
+.title,
+    .title:after{
+        background-color:#333;
+    }
+.title{
+    position:relative;
+    line-height:1;
+    color:#fff;
+    display:inline;
+    white-space:pre-wrap;
+    border:0 solid #333;
+    border-width:0.25em 0; /* 0.25em is roughly equal to one space character. */
+}
+    .title:after{
+        content:"";
+        position:absolute;
+        top:-0.25em;
+        right:100%;
+        bottom:-0.25em;
+        width:0.25em;
+    }
+    .title > span{
+        position:relative;
+        z-index:1;
+    }
